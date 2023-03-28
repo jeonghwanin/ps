@@ -1,49 +1,48 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <queue>
-
-int arr[5001][5001];
-int MIN(int a, int b, int c) {
-	if (a <= b && a <= c) return a;
-	if (b <= a && b <= c) return b;
-	if (c <= a && c <= b) return c;
-}
+#include <cstring>
+#include <vector>
+struct Node {
+	int a;
+	int cost;
+};
+std::vector<Node>v[5001];
+bool visited[5001];
 int main(void) {
-	int N, Q, p, q, r, k, ans;
+	int N, Q, p, q, r, k;
 	scanf("%d %d", &N, &Q);
-
-	for (int y = 1; y <= N; ++y)
-		for (int x = 1; x<= N; ++x) {
-			arr[y][x] = 1e9;
-			arr[y][y] = 0;
-		}
-	for (int t = 0; t < N-1; ++t){
+	for (int t = 0; t < N - 1; ++t) {
 		scanf("%d %d %d", &p, &q, &r);
-		arr[p][q] = r;
-		arr[q][p] = r;
+		v[p].push_back({ q, r });
+		v[q].push_back({ p, r });
 	}
-
-	for (int t = 1; t <= N; ++t) {
-		for (int q = 1; q <= N; ++q) {
-			for (int w = 1; w <= N; ++w) {
-				if (q == w || q==t||w==t) continue;
-				arr[q][w] = MIN(arr[q][w], arr[q][t], arr[w][t]);
+	for(int t=0; t<Q; ++t){
+		scanf("%d %d", &k, &r);
+		
+		int cnt = 0;
+		std::queue<Node>q;
+		for (int t = 1; t <= N; ++t)
+			visited[t] = false;
+		q.push({ r, 2100000000 });
+		visited[r] = true;
+		while (!q.empty()) {
+			Node now = q.front(); q.pop();
+			if (now.cost >= k) ++cnt;
+			for (int t = 0; t < v[now.a].size(); ++t) {
+				Node next = v[now.a][t];
+				int ncost = next.cost;
+				if (ncost == 0) continue;
+				if (visited[next.a] == true) continue;
+				visited[next.a] = true;
+				if (ncost > now.cost) ncost = now.cost;
+				q.push({ next.a, ncost});
 			}
 		}
-	}
-	for (int t = 1; t <= N; ++t) {
-		for (int q = 1; q <= N; ++q)
-			printf("%d", arr[t][q]);
-		printf("\n");
-	}
-	for (int t = 0; t < Q; ++t) {
+		--cnt;
+		printf("%d\n", cnt);
 
-		ans = 0;
-		scanf("%d %d", &p, &k);
-		for (int q = 1; q <= N; ++q) {
-			if (arr[p][q] != 0 && arr[p][q] >= k)++ans;
-		}
-		printf("%d\n", ans);
 	}
-	
+
+
 }
