@@ -1,4 +1,4 @@
 ﻿  소스.cpp
-C:\ssafy\algorithlm\ps\SWEA\Pro 연습 1.오타교정시스템\Pro 연습 1.오타교정시스템\소스.cpp(83,36): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\ssafy\algorithlm\ps\SWEA\Pro 연습 1.오타교정시스템\Pro 연습 1.오타교정시스템\소스.cpp(84,26): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Pro 연습 1.오타교정시스템.vcxproj -> C:\ssafy\algorithlm\ps\SWEA\Pro 연습 1.오타교정시스템\x64\Debug\Pro 연습 1.오타교정시스템.exe
+C:\Users\82107\Desktop\연습\ps\SWEA\Pro 연습 1.오타교정시스템\Pro 연습 1.오타교정시스템\소스.cpp(29,36): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\82107\Desktop\연습\ps\SWEA\Pro 연습 1.오타교정시스템\Pro 연습 1.오타교정시스템\소스.cpp(30,26): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Pro 연습 1.오타교정시스템.vcxproj -> C:\Users\82107\Desktop\연습\ps\SWEA\Pro 연습 1.오타교정시스템\x64\Debug\Pro 연습 1.오타교정시스템.exe
