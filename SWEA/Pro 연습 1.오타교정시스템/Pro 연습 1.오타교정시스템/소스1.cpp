@@ -62,6 +62,7 @@ bool run(int m) {
 				}
 
 				if (!isExist) {
+					int da = 1;
 					accepted = false;
 				}
 			}
@@ -76,14 +77,16 @@ int main(void) {
 	int test, T;
 	int wordCnt;
 
-	 freopen("input.txt", "r", stdin);
-
+	freopen("input.txt", "r", stdin);
+	//freopen("output.txt", "w", stdout);
 	setbuf(stdout, NULL);
 
 	scanf("%d", &T);
 
 	for (test = 1; test <= T; ++test) {
-
+		if (test == 10) {
+			int da = 1;
+		}
 		scanf("%d", &wordCnt);
 
 		inputWords(wordCnt);
