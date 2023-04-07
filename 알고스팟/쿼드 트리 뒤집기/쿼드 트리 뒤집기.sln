@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "쿼드 트리 뒤집기", "쿼드 트리 뒤집기\쿼드 트리 뒤집기.vcxproj", "{B163D736-FBB9-46D7-B751-F36806DEAA39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B163D736-FBB9-46D7-B751-F36806DEAA39}.Debug|x64.ActiveCfg = Debug|x64
+		{B163D736-FBB9-46D7-B751-F36806DEAA39}.Debug|x64.Build.0 = Debug|x64
+		{B163D736-FBB9-46D7-B751-F36806DEAA39}.Debug|x86.ActiveCfg = Debug|Win32
+		{B163D736-FBB9-46D7-B751-F36806DEAA39}.Debug|x86.Build.0 = Debug|Win32
+		{B163D736-FBB9-46D7-B751-F36806DEAA39}.Release|x64.ActiveCfg = Release|x64
+		{B163D736-FBB9-46D7-B751-F36806DEAA39}.Release|x64.Build.0 = Release|x64
+		{B163D736-FBB9-46D7-B751-F36806DEAA39}.Release|x86.ActiveCfg = Release|Win32
+		{B163D736-FBB9-46D7-B751-F36806DEAA39}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5315C23B-313E-47BA-9CBC-877F4712C0BD}
+	EndGlobalSection
+EndGlobal
