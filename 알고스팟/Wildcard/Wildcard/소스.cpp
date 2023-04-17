@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #define _CRT_SECURE_NO_WARNINGS
 #include <string>
 #include <iostream>
@@ -78,3 +79,5 @@ int main(void) {
 		}
 	}
 }
+=======
+>>>>>>> efe3edc1b8845b19b6cefe7d82909f343d953ac8
